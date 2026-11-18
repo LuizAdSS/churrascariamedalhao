@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medalhão | Cardápio</title>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20150%20150%22%3E%3Cdefs%3E%3ClinearGradient%20id=%22ouroG%22%20x1=%220%22%20y1=%220%22%20x2=%220%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23f3dc86%22/%3E%3Cstop%20offset=%22.55%22%20stop-color=%22%23d4af37%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23a98a25%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%22150%22%20height=%22150%22%20fill=%22%230b0b0b%22/%3E%3Ccircle%20cx=%2275%22%20cy=%2275%22%20r=%2271%22%20fill=%22%230b0b0b%22%20stroke=%22url(%23ouroG)%22%20stroke-width=%223%22/%3E%3Ccircle%20cx=%2275%22%20cy=%2275%22%20r=%2264%22%20fill=%22none%22%20stroke=%22%23d4af37%22%20stroke-width=%221%22/%3E%3Cg%20fill=%22url(%23ouroG)%22%3E%3Cpath%20d=%22M58%2047C40%2050%2027%2042%2025%2019C35%2032%2046%2032%2060%2035Z%22/%3E%3Cpath%20d=%22M92%2047C110%2050%20123%2042%20125%2019C115%2032%20104%2032%2090%2035Z%22/%3E%3Cpath%20d=%22M56%2048L38%2052L45%2062L58%2057Z%22/%3E%3Cpath%20d=%22M94%2048L112%2052L105%2062L92%2057Z%22/%3E%3Cpath%20d=%22M57%2035C65%2032%2085%2032%2093%2035L96%2052C96%2065%2090%2073%2088%2079L88%2084C88%2090%2062%2090%2062%2084L62%2079C60%2073%2054%2065%2054%2052Z%22/%3E%3C/g%3E%3Cg%20fill=%22%230b0b0b%22%3E%3Cellipse%20cx=%2264%22%20cy=%2253%22%20rx=%223.4%22%20ry=%222%22%20transform=%22rotate(18%2064%2053)%22/%3E%3Cellipse%20cx=%2286%22%20cy=%2253%22%20rx=%223.4%22%20ry=%222%22%20transform=%22rotate(-18%2086%2053)%22/%3E%3Cellipse%20cx=%2269%22%20cy=%2280%22%20rx=%222.4%22%20ry=%223.4%22/%3E%3Cellipse%20cx=%2281%22%20cy=%2280%22%20rx=%222.4%22%20ry=%223.4%22/%3E%3C/g%3E%3Cpath%20d=%22M68%2041Q75%2048%2082%2041%22%20fill=%22none%22%20stroke=%22%230b0b0b%22%20stroke-width=%221.6%22%20stroke-linecap=%22round%22/%3E%3Ccircle%20cx=%2275%22%20cy=%2288%22%20r=%225%22%20fill=%22none%22%20stroke=%22%23f3dc86%22%20stroke-width=%221.8%22/%3E%3C/svg%3E%0A">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><svg class="selo" viewBox="0 0 150 150" role="img" aria-label="Medalhão"><defs><linearGradient id="ouroG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3dc86"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a98a25"/></linearGradient></defs><circle cx="75" cy="75" r="71" fill="#0b0b0b" stroke="url(#ouroG)" stroke-width="3"/><circle cx="75" cy="75" r="64" fill="none" stroke="#d4af37" stroke-width="1"/><g fill="url(#ouroG)"><path d="M58 47C40 50 27 42 25 19C35 32 46 32 60 35Z"/><path d="M92 47C110 50 123 42 125 19C115 32 104 32 90 35Z"/><path d="M56 48L38 52L45 62L58 57Z"/><path d="M94 48L112 52L105 62L92 57Z"/><path d="M57 35C65 32 85 32 93 35L96 52C96 65 90 73 88 79L88 84C88 90 62 90 62 84L62 79C60 73 54 65 54 52Z"/></g><g fill="#0b0b0b"><ellipse cx="64" cy="53" rx="3.4" ry="2" transform="rotate(18 64 53)"/><ellipse cx="86" cy="53" rx="3.4" ry="2" transform="rotate(-18 86 53)"/><ellipse cx="69" cy="80" rx="2.4" ry="3.4"/><ellipse cx="81" cy="80" rx="2.4" ry="3.4"/></g><path d="M68 41Q75 48 82 41" fill="none" stroke="#0b0b0b" stroke-width="1.6" stroke-linecap="round"/><circle cx="75" cy="88" r="5" fill="none" stroke="#f3dc86" stroke-width="1.8"/><text x="75" y="110" text-anchor="middle" font-family="Rozha One,Georgia,serif" font-size="19" fill="#d4af37">Medalhão</text><text x="75" y="124" text-anchor="middle" font-family="Work Sans,Arial,sans-serif" font-size="6.6" letter-spacing=".9" fill="#d4af37">CHURRASCO NA BRASA</text></svg>
+<p id="mesaTxt">Escolha seus pratos e envie o pedido</p></header>
+<nav class="nav" id="nav" aria-label="Seções do cardápio"></nav>
+<main>
+  <div class="aviso" id="aviso" role="status"></div>
+  <div id="acompanha" aria-live="polite"></div>
+  <div id="cardapio"></div>
+  <h2 id="obsTitulo">Alguma observação?</h2>
+  <textarea id="obs" rows="2" placeholder="Ex.: picanha ao ponto, farofa sem bacon"></textarea>
+  <p class="rodape">Medalhão, churrasco na brasa</p>
+</main>
+<div class="barra"><div>Total <b id="total">R$ 0,00</b><div class="prev" id="prev"></div></div><button id="enviar" disabled>Enviar pedido</button></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="db.js"></script>
+<script>
+const T = "#d4af37", B = "#a98a25";
+const ICONES = {
+  espeto: `<svg viewBox="0 0 40 40"><line x1="3" y1="37" x2="37" y2="3" stroke="${T}" stroke-width="2.5"/><circle cx="12" cy="28" r="5" fill="${B}"/><circle cx="20" cy="20" r="5" fill="${T}"/><circle cx="28" cy="12" r="5" fill="${B}"/></svg>`,
+  prato: `<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="${T}" stroke-width="2.5"/><circle cx="20" cy="20" r="9" fill="${B}"/></svg>`,
+  doce: `<svg viewBox="0 0 40 40"><path d="M5 32 L35 32 L29 12 L11 12Z" fill="${B}"/><path d="M11 12 Q20 4 29 12" fill="none" stroke="${T}" stroke-width="2.5"/><line x1="5" y1="35" x2="35" y2="35" stroke="${T}" stroke-width="2.5"/></svg>`,
+  copo: `<svg viewBox="0 0 40 40"><path d="M10 6 H30 L26 36 H14Z" fill="none" stroke="${T}" stroke-width="2.5"/><path d="M12 20 H28 L26 36 H14Z" fill="${B}"/></svg>`
+};
+// [nome, preço, [tempo mín, tempo máx] em minutos, descrição, destaque?]
+const MENU = {
+  "Carnes na brasa": ["espeto", [
+    ["Medalhão da casa", 79.9, [30, 40], "Filé mignon envolto em bacon, grelhado na brasa", 1],
+    ["Picanha (300 g)", 64.9, [25, 35], "Sal grosso, na brasa"],
+    ["Contrafilé (300 g)", 56, [25, 35], "Com bordinha de gordura"],
+    ["Fraldinha (300 g)", 52, [25, 35], "Macia e suculenta"],
+    ["Maminha (300 g)", 48, [25, 35], "Corte tradicional do churrasco"],
+    ["Cupim (300 g)", 46, [30, 40], "Assado devagar, desfia no garfo"],
+    ["Costela gaúcha (400 g)", 58, [35, 45], "Assada por várias horas"],
+    ["Costelinha suína (400 g)", 44, [30, 40], "Temperada e dourada"],
+    ["Linguiça artesanal", 34, [15, 25], "3 unidades"],
+    ["Coração de frango", 28, [20, 30], "Espeto com 5 unidades"],
+    ["Meio frango na brasa", 36, [30, 40], "Temperado com alho e ervas"],
+    ["Queijo coalho", 22, [10, 15], "Espeto, com melaço"]]],
+  "Para acompanhar": ["prato", [
+    ["Arroz carreteiro", 26, [15, 20], "Com charque"],
+    ["Feijão tropeiro", 22, [15, 20], "Com linguiça, bacon e couve"],
+    ["Farofa da casa", 14, [10, 15], "Bacon e ovo"],
+    ["Mandioca frita", 18, [15, 20], "Crocante por fora"],
+    ["Batata rústica", 20, [15, 25], "Com alecrim"],
+    ["Salada de maionese", 15, [5, 10], ""],
+    ["Vinagrete", 12, [5, 10], ""],
+    ["Pão de alho", 16, [10, 15], "4 fatias na chapa"]]],
+  "Sobremesas": ["doce", [
+    ["Pudim de leite", 14, [5, 10], "Com calda de caramelo"],
+    ["Mousse de maracujá", 13, [5, 10], ""],
+    ["Doce de leite com queijo", 16, [5, 10], "Combinação mineira"],
+    ["Quindim", 10, [5, 10], "Coco e gema"],
+    ["Sorvete de creme", 15, [5, 10], "Com calda de chocolate"]]],
+  "Bebidas": ["copo", [
+    ["Guaraná 350 ml", 8, [3, 5], ""],
+    ["Refrigerante lata", 7, [3, 5], ""],
+    ["Suco de laranja", 11, [8, 12], "Natural"],
+    ["Suco de maracujá", 11, [8, 12], "Natural"],
+    ["Limonada", 10, [8, 12], "Com hortelã"],
+    ["Mate gelado", 9, [3, 5], ""],
+    ["Água mineral", 6, [3, 5], ""]]]
+};
+const RELOGIO = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>`;
+const faixa = ([a, b]) => a + "–" + b + " min";
+const carrinho = {};
+const mesa = new URLSearchParams(location.search).get("mesa") || "";
+const R = v => "R$ " + v.toFixed(2).replace(".", ",");
+if (mesa) document.getElementById("mesaTxt").textContent = "Mesa " + mesa + ". Escolha seus pratos e envie o pedido";
+
+const cardapio = document.getElementById("cardapio"), nav = document.getElementById("nav");
+Object.entries(MENU).forEach(([grupo, [icone, itens]], g) => {
+  nav.insertAdjacentHTML("beforeend", '<a href="#s' + g + '">' + grupo + "</a>");
+  let html = '<section id="s' + g + '"><h2>' + ICONES[icone] + grupo + "</h2>";
+  for (const [nome, preco, tempo, desc, dest] of itens) {
+    html += '<div class="item' + (dest ? " destaque" : "") + '" id="i-' + nome + '"><div class="info"><div class="linha"><b>' + nome + "</b><i></i><span>" + R(preco) + "</span></div>" +
+      (desc ? "<small>" + desc + "</small>" : "") +
+      '<small class="tempo">' + RELOGIO + faixa(tempo) + "</small>" + '</div><div class="qtd">' +
+      '<button aria-label="Tirar ' + nome + '" data-n="' + nome + '" data-d="-1">−</button><span id="q-' + nome + '">0</span>' +
+      '<button aria-label="Adicionar ' + nome + '" data-n="' + nome + '" data-d="1">+</button></div></div>';
+  }
+  cardapio.insertAdjacentHTML("beforeend", html + "</section>");
+});
+const achar = n => Object.values(MENU).flatMap(g => g[1]).find(i => i[0] === n);
+const preco = n => achar(n)[1];
+// tempo do pedido: a cozinha prepara em paralelo, então vale o prato mais demorado
+function previsao() {
+  const t = Object.entries(carrinho).filter(([, q]) => q > 0).map(([n]) => achar(n)[2]);
+  return t.length ? [Math.max(...t.map(x => x[0])), Math.max(...t.map(x => x[1]))] : null;
+}
+cardapio.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const n = b.dataset.n, q = Math.max(0, (carrinho[n] || 0) + Number(b.dataset.d));
+  carrinho[n] = q;
+  document.getElementById("q-" + n).textContent = q;
+  document.getElementById("i-" + n).classList.toggle("tem", q > 0);
+  atualiza();
+});
+function atualiza() {
+  const total = Object.entries(carrinho).reduce((s, [n, q]) => s + q * preco(n), 0);
+  document.getElementById("total").textContent = R(total);
+  document.getElementById("enviar").disabled = total === 0;
+  const p = previsao();
+  document.getElementById("prev").innerHTML = p ? RELOGIO + "Previsão " + faixa(p) : "";
+}
+document.getElementById("enviar").addEventListener("click", async () => {
+  const m = mesa || prompt("Qual o número da sua mesa?");
+  if (!m) return;
+  const itens = Object.entries(carrinho).filter(([, q]) => q > 0).map(([nome, qtd]) => ({ nome, qtd }));
+  document.getElementById("enviar").disabled = true;
+  const p = previsao(), prevTxt = p ? faixa(p) : "";
+  const idPedido = await DB.enviar({ mesa: m, itens, obs: document.getElementById("obs").value.trim(), tempo: prevTxt });
+  for (const n in carrinho) { carrinho[n] = 0; document.getElementById("q-" + n).textContent = 0; document.getElementById("i-" + n).classList.remove("tem"); }
+  document.getElementById("obs").value = ""; atualiza();
+  guardaMeus(meus().concat(idPedido)); mostra();
+  const a = document.getElementById("aviso");
+  a.style.display = "block"; a.textContent = "Pedido enviado! A cozinha já recebeu. Previsão: " + prevTxt + ".";
+  scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// ===== Acompanhamento: mostra no cardápio o status dos pedidos feitos neste aparelho =====
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const meus = () => { try { return JSON.parse(localStorage.getItem("meusPedidos") || "[]"); } catch { return []; } };
+const guardaMeus = l => { try { localStorage.setItem("meusPedidos", JSON.stringify(l)); } catch {} };
+let dados = {}, ultimo = {};
+function mostra() {
+  const lista = meus().filter(id => dados[id]).sort((a, b) => dados[b].hora - dados[a].hora);
+  document.getElementById("acompanha").innerHTML = lista.map(id => {
+    const p = dados[id], pronto = p.status === "pronto";
+    const itens = p.itens.map(i => i.qtd + "x " + esc(i.nome)).join(", ");
+    return '<div class="status-pedido ' + (pronto ? "ok" : "") + '"><b>' +
+      (pronto ? "Seu pedido está pronto!" : "Em preparo" + (p.tempo ? " · previsão " + esc(p.tempo) : "")) +
+      "</b><small>Mesa " + esc(p.mesa) + " · " + itens + "</small>" +
+      (pronto ? '<button data-ok="' + esc(id) + '">Entendi</button>' : "") + "</div>";
+  }).join("");
+}
+DB.ouvir(d => {
+  const antes = ultimo;
+  dados = d; ultimo = {};
+  for (const id in d) ultimo[id] = d[id].status;
+  const chegou = meus().some(id => d[id] && d[id].status === "pronto" && antes[id] === "novo");
+  mostra();
+  if (chegou) { scrollTo({ top: 0, behavior: "smooth" }); if (navigator.vibrate) navigator.vibrate([200, 100, 200]); }
+});
+document.getElementById("acompanha").addEventListener("click", e => {
+  const b = e.target.closest("[data-ok]"); if (!b) return;
+  guardaMeus(meus().filter(id => id !== b.dataset.ok)); mostra();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Medalhão: preto e dourado */
+:root{
+  --preto:#0b0b0b;
+  --carvao:#171612;
+  --ouro:#d4af37;
+  --ouro-claro:#f3dc86;
+  --ouro-escuro:#a98a25;
+  --creme:#efe6cc;
+  --papel:#f3ead0;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Work Sans",Arial,sans-serif;background:var(--preto);color:var(--creme);line-height:1.4;
+  background-image:radial-gradient(rgba(212,175,55,.09) 1px,transparent 1px);background-size:6px 6px}
+body::before{content:"";display:block;height:16px;background:conic-gradient(var(--ouro) 25%,var(--preto) 0 50%,var(--ouro) 0 75%,var(--preto) 0) 0 0/32px 32px;border-bottom:2px solid var(--ouro)}
+h1,h2,.display{font-family:"Rozha One",Georgia,serif;font-weight:400;color:var(--ouro)}
+header{text-align:center;padding:28px 16px 8px}
+.selo{width:170px;height:170px;display:block;margin:0 auto}
+header p{margin:10px 0 0;font-size:1.05rem}
+header h1{font-size:2.2rem;margin:6px 0 0}
+main{max-width:620px;margin:0 auto;padding:8px 18px 150px}
+h2{font-size:1.7rem;margin:34px 0 10px;display:flex;align-items:center;gap:10px}
+h2 svg{width:34px;height:34px;flex-shrink:0}
+section{scroll-margin-top:62px}
+
+/* cardápio */
+.item{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:9px 0}
+.info{flex:1;min-width:0}
+.linha{display:flex;align-items:baseline;gap:6px}
+.linha b{font-weight:600;font-size:1.05rem}
+.linha i{flex:1;border-bottom:2px dotted var(--ouro);opacity:.45;transform:translateY(-4px)}
+.linha span{font-weight:600;font-variant-numeric:tabular-nums;color:var(--ouro-claro)}
+.info small{display:block;font-size:.88rem;opacity:.75}
+.item.tem .linha b{color:var(--ouro-claro)}
+.tempo{display:flex!important;align-items:center;gap:5px;margin-top:3px;font-weight:600;opacity:1!important;color:var(--ouro)}
+.tempo svg,.prev svg{width:14px;height:14px;flex-shrink:0}
+.destaque{background:var(--carvao);border:3px solid var(--ouro);padding:10px 14px;margin:10px 0 14px;box-shadow:0 0 0 1px var(--preto),0 0 18px rgba(212,175,55,.25)}
+.destaque .linha b{font-family:"Rozha One",serif;font-weight:400;font-size:1.3rem;color:var(--ouro-claro)}
+.destaque .linha span{font-size:1.1rem}
+.qtd{display:flex;align-items:center;gap:8px}
+.qtd button{width:38px;height:38px;border:2px solid var(--ouro);background:transparent;color:var(--ouro);font:inherit;font-size:1.3rem;line-height:1;cursor:pointer}
+.qtd button:active{background:var(--ouro);color:var(--preto)}
+.qtd span{min-width:18px;text-align:center;font-weight:600}
+button:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--ouro-claro);outline-offset:2px}
+textarea{width:100%;padding:10px;font:inherit;border:2px solid var(--ouro);background:var(--carvao);color:var(--creme);border-radius:0}
+textarea::placeholder{color:var(--creme);opacity:.45}
+.rodape{text-align:center;margin-top:36px;opacity:.7;font-size:.9rem}
+
+/* menu de seções */
+.nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:10px 18px;background:var(--preto);border-bottom:2px solid var(--ouro)}
+.nav a{white-space:nowrap;padding:6px 14px;border:2px solid var(--ouro);color:var(--ouro);text-decoration:none;font-weight:600}
+.nav a:active,.nav a:hover{background:var(--ouro);color:var(--preto)}
+
+/* barra do total */
+.barra{position:fixed;left:0;right:0;bottom:0;background:var(--carvao);color:var(--creme);border-top:2px solid var(--ouro);padding:12px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.barra b{color:var(--ouro-claro)}
+.barra button{background:linear-gradient(var(--ouro-claro),var(--ouro) 60%,var(--ouro-escuro));color:var(--preto);border:0;padding:13px 22px;font-family:"Rozha One",serif;font-size:1.05rem;cursor:pointer}
+.barra button:disabled{opacity:.35;cursor:not-allowed}
+.prev{display:flex;align-items:center;gap:5px;font-size:.85rem;color:var(--ouro);opacity:.95}
+.prev:empty{display:none}
+
+/* avisos e status do pedido */
+.aviso{background:var(--ouro);color:var(--preto);font-weight:600;padding:14px;margin:18px 0;display:none}
+.status-pedido{background:var(--carvao);border:2px solid var(--ouro);padding:12px 14px;margin:12px 0;display:flex;flex-direction:column;gap:4px}
+.status-pedido small{opacity:.8}
+.status-pedido.ok{background:var(--ouro);border-color:var(--ouro-claro);color:var(--preto)}
+.status-pedido.ok b{font-family:"Rozha One",Georgia,serif;font-weight:400;font-size:1.3rem}
+.status-pedido button{align-self:flex-start;margin-top:6px;background:var(--preto);color:var(--ouro);border:0;padding:8px 16px;font:inherit;font-weight:600;cursor:pointer}
+
+/* cozinha */
+.comandas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;max-width:1100px;margin:0 auto;padding:20px}
+.comanda{background:var(--papel);color:var(--preto);padding:16px 16px 20px;font-family:"Courier Prime",monospace;border-bottom:3px dashed var(--preto)}
+.comanda h2{font-size:2rem;margin:0;color:var(--preto)}
+.comanda small{opacity:.7}
+.comanda ul{list-style:none;padding:0;margin:12px 0}
+.comanda li{padding:3px 0;font-size:1.05rem}
+.comanda.feita{opacity:.5}.comanda.feita li{text-decoration:line-through}
+.pronto{background:var(--preto);color:var(--ouro);border:0;padding:11px 16px;font:inherit;font-weight:700;cursor:pointer;width:100%}
+.vazio{grid-column:1/-1;text-align:center;padding:40px;opacity:.7}
+.apagar{margin-top:14px;background:transparent;color:var(--ouro);border:2px solid var(--ouro);padding:9px 16px;font:inherit;font-weight:600;cursor:pointer}
+.apagar:active{background:var(--ouro);color:var(--preto)}
